@@ -210,7 +210,25 @@ function evidenceLabel(type=''){
 }
 function renderProfile(){const en=state.lang==='en';$('profileStats').innerHTML=[[(en?'Years':'Năm'),en?(profile.yearsEn||profile.years):profile.years],[(en?'Polity':'Triều đại'),en?profile.dynastyEn:profile.dynasty],[(en?'Rule':'Trị vì'),en?(profile.reignEn||profile.reign):profile.reign],[(en?'Capital':'Kinh đô'),en?(profile.capitalEn||profile.capital):profile.capital]].map(([a,b])=>`<div class="stat"><small>${esc(a)}</small><b>${esc(b)}</b></div>`).join('');$('timeline').innerHTML=profile.timeline.map(x=>`<div class="timeline-item"><div class="timeline-year">${esc(x.year)}</div><div>${esc(en?x.en:x.vi)}<div class="source-inline">${x.sources.map(s=>`<button class="source-chip" data-source="${s}">${t('source')} ${s}</button>`).join('')}</div></div></div>`).join('');$('profileSections').innerHTML=profile.profileSections.map(x=>`<article class="profile-section"><h4>${esc(en?x.titleEn:x.title)}</h4><p>${esc(en?x.bodyEn:x.body)}</p>${x.evidenceType?`<p class="evidence-tag"><i>${esc(en?'Evidence category: ':'Phân loại: ')}${esc(evidenceLabel(x.evidenceType))}</i></p>`:''}<div class="source-inline">${x.sources.map(s=>`<button class="source-chip" data-source="${s}">${t('source')} ${s}</button>`).join('')}</div></article>`).join('');}
 function renderSources(){const en=state.lang==='en';$('sourcesList').innerHTML=profile.sources.map(s=>`<article class="source-card" id="src-${s.id}"><h4>${esc(en?s.titleEn:s.title)}</h4><p><b>${esc(en?s.orgEn:s.org)}</b></p><p>${esc(en?s.typeEn:s.type)}</p><a href="${esc(s.url)}" target="_blank" rel="noopener">${t('openSource')}</a></article>`).join('')}
-function renderSuggestions(){const en=state.lang==='en';const make=(arr,target,input)=>$(target).innerHTML=arr.map(x=>`<button class="chip" data-fill="${esc(x)}" data-input="${input}">${esc(x)}</button>`).join('');make(profile.qaSuggestions[en?'en':'vi'],'qaSuggestions','qaInput');make(profile.whatifSuggestions[en?'en':'vi'],'whatifSuggestions','whatifInput')}
+function renderSuggestions(){
+  const en=state.lang==='en';
+  const fallbackQa={
+    vi:['Phùng Hưng nổi dậy trong bối cảnh nào?','Đại Việt sử ký toàn thư chép gì về Cao Chính Bình?','Vì sao thời gian Phùng Hưng nắm quyền còn tranh luận?','Tôn hiệu Bố Cái Đại Vương có ý nghĩa gì?'],
+    en:['In what context did Phung Hung rise?','What does the Complete Annals say about Cao Chinh Binh?',"Why is the length of Phung Hung's rule disputed?",'What does the title Bo Cai Dai Vuong mean?']
+  };
+  const fallbackWhatif={
+    vi:['Nếu Phùng Hưng duy trì được một liên minh địa phương bền vững hơn thì sao?','Nếu Phùng An không quy phục Triệu Xương thì điều gì có thể xảy ra?','Nếu chính quyền mới ưu tiên củng cố hậu cần trước khi mở rộng kiểm soát thì sao?'],
+    en:['What if Phung Hung had sustained a stronger local alliance?','What if Phung An had not submitted to Zhao Chang?','What if the new government had prioritised logistics before expanding control?']
+  };
+  const lang=en?'en':'vi';
+  const make=(arr,target,input)=>{
+    const host=$(target);if(!host)return;
+    const safe=Array.isArray(arr)&&arr.length?arr:[];
+    host.innerHTML=safe.map(x=>`<button class="chip" type="button" data-fill="${esc(x)}" data-input="${input}">${esc(x)}</button>`).join('');
+  };
+  make(profile?.qaSuggestions?.[lang]||fallbackQa[lang],'qaSuggestions','qaInput');
+  make(profile?.whatifSuggestions?.[lang]||fallbackWhatif[lang],'whatifSuggestions','whatifInput');
+}
 function renderGuide(){const items=state.lang==='vi'?['Kéo mô hình để xoay; chụm hoặc cuộn để phóng to.','Mở Hồ sơ để xem timeline và nguồn sử liệu.','Tra cứu sử liệu dùng kho dữ kiện đã biên tập.','Giả định lịch sử chỉ là mô phỏng nguyên nhân–hậu quả.','Nhập vai giúp cân nhắc quân sự, ngoại giao, lòng dân và hậu cần.']:['Drag the model to rotate; pinch or scroll to zoom.','Open Profile to inspect the timeline and sources.','Historical inquiry uses a curated evidence base.','Counterfactual analysis is a cause-and-effect learning simulation.','Role-play weighs military, diplomacy, public support and logistics.'];$('guideList').innerHTML=items.map(x=>`<li>${esc(x)}</li>`).join('')}
 function renderJourney(){const en=state.lang==='en';const names=en?{artifact:'Exhibit discovered',profile:'Profile opened',qa:'Historical inquiry used',whatif:'Counterfactual used',role:'Role-play used'}:{artifact:'Đã khám phá hiện vật',profile:'Đã mở hồ sơ',qa:'Đã tra cứu sử liệu',whatif:'Đã thử giả định',role:'Đã nhập vai'};$('journeyList').innerHTML=Object.keys(names).map(k=>`<div class="journey-item"><span>${names[k]}</span><b>${state.journey[k]?'✓':'○'}</b></div>`).join('')}
 

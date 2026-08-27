@@ -198,7 +198,12 @@
   <section id="qaPanel" class="panel hidden">
     <button class="panel-close" type="button">×</button>
     <div class="panel-head"><p class="eyebrow" id="qaEyebrow">HOẠT ĐỘNG 1</p><h2 id="qaHeading">Tra cứu sử liệu</h2><p id="qaHelp">Câu trả lời phải chỉ ra dữ kiện nền, nguồn hỗ trợ và phần cần kiểm chứng.</p></div>
-    <div id="qaSuggestions" class="chips"></div>
+    <div id="qaSuggestions" class="chips" aria-label="Câu hỏi gợi ý">
+      <button class="chip" type="button" data-fill="Phùng Hưng nổi dậy trong bối cảnh nào?" data-input="qaInput">Phùng Hưng nổi dậy trong bối cảnh nào?</button>
+      <button class="chip" type="button" data-fill="Đại Việt sử ký toàn thư chép gì về Cao Chính Bình?" data-input="qaInput">Đại Việt sử ký toàn thư chép gì về Cao Chính Bình?</button>
+      <button class="chip" type="button" data-fill="Vì sao thời gian Phùng Hưng nắm quyền còn tranh luận?" data-input="qaInput">Vì sao thời gian Phùng Hưng nắm quyền còn tranh luận?</button>
+      <button class="chip" type="button" data-fill="Tôn hiệu Bố Cái Đại Vương có ý nghĩa gì?" data-input="qaInput">Tôn hiệu Bố Cái Đại Vương có ý nghĩa gì?</button>
+    </div>
     <div class="query-row"><input id="qaInput" maxlength="600"><button id="qaMicBtn" class="btn small" type="button">🎙 Mic</button><button id="qaSendBtn" class="btn primary small" type="button">Tra cứu</button></div>
     <div id="qaStatus" class="activity-status"></div>
     <div id="qaResult" class="result-card empty"></div>
@@ -207,7 +212,11 @@
   <section id="whatifPanel" class="panel hidden">
     <button class="panel-close" type="button">×</button>
     <div class="panel-head"><p class="eyebrow" id="whatifEyebrow">HOẠT ĐỘNG 2</p><h2 id="whatifHeading">Giả định lịch sử</h2><p id="whatifHelp">Mô phỏng để học quan hệ nguyên nhân–hậu quả, không phải dự đoán lịch sử.</p></div>
-    <div id="whatifSuggestions" class="chips"></div>
+    <div id="whatifSuggestions" class="chips" aria-label="Gợi ý giả định lịch sử">
+      <button class="chip" type="button" data-fill="Nếu Phùng Hưng duy trì được một liên minh địa phương bền vững hơn thì sao?" data-input="whatifInput">Nếu Phùng Hưng duy trì được một liên minh địa phương bền vững hơn thì sao?</button>
+      <button class="chip" type="button" data-fill="Nếu Phùng An không quy phục Triệu Xương thì điều gì có thể xảy ra?" data-input="whatifInput">Nếu Phùng An không quy phục Triệu Xương thì điều gì có thể xảy ra?</button>
+      <button class="chip" type="button" data-fill="Nếu chính quyền mới ưu tiên củng cố hậu cần trước khi mở rộng kiểm soát thì sao?" data-input="whatifInput">Nếu chính quyền mới ưu tiên củng cố hậu cần trước khi mở rộng kiểm soát thì sao?</button>
+    </div>
     <div class="query-row"><input id="whatifInput" maxlength="700"><button id="whatifMicBtn" class="btn small" type="button">🎙 Mic</button><button id="whatifSendBtn" class="btn primary small" type="button">Phân tích</button></div>
     <div id="whatifStatus" class="activity-status"></div>
     <div id="whatifResult" class="result-card empty"></div>
