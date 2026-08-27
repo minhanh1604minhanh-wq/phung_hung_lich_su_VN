@@ -1,0 +1,5 @@
+PROMPT NÀY ĐÃ ĐƯỢC THAY THẾ.
+
+Sử dụng file: PROMPT_MASTER_WEBSITE_NHAN_VAT_LICH_SU_v5.8.5.md
+
+Phiên bản mới bổ sung khóa vai AI/NPC, phiếu PDF dựng từ toàn bộ lịch sử lượt, thư viện PDF cục bộ, tốc độ đọc 1.12× và quy trình render PDF để kiểm tra trang trắng/cắt lề.

@@ -1,0 +1,90 @@
+
+> phung-hung-history-museum@5.8.5 validate
+> node validate-project.js
+
+PASS (85)
+✓ JSON hợp lệ
+✓ Slug nhân vật
+✓ Tên VI/EN
+✓ Ít nhất 6 mục hồ sơ
+✓ Timeline ít nhất 6 mốc
+✓ Facts nền hiện diện
+✓ Nhập vai tối đa 6 lượt
+✓ Nhập vai đúng nhân vật
+✓ NPC nhập vai đúng cố vấn
+✓ Khóa xưng hô Phùng Hưng
+✓ Có cụm nhận diện đảo vai
+✓ Có thoại dự phòng đúng vai
+✓ Baseline chỉ số mô phỏng đúng
+✓ Mọi mục lịch sử có sourceIds
+✓ Mọi sourceId đều tồn tại
+✓ Metadata lịch sử có sourceIds
+✓ Intro và màn bụi có nguồn
+✓ Hồ sơ song ngữ
+✓ Timeline song ngữ
+✓ Facts song ngữ
+✓ Gợi ý VI/EN
+✓ URL nguồn chỉ thuộc whitelist
+✓ Asset tồn tại: public/assets/phung-hung.glb
+✓ Asset tồn tại: public/assets/phung-hung-vi.mp3
+✓ Asset tồn tại: public/assets/phung-hung-en.mp3
+✓ GLB magic glTF
+✓ GLB version 2
+✓ GLB length hợp lệ
+✓ MP3 hợp lệ: public/assets/phung-hung-vi.mp3
+✓ MP3 hợp lệ: public/assets/phung-hung-en.mp3
+✓ Thư viện PDF được đóng gói cục bộ
+✓ Nạp được tiện ích frontend
+✓ Phiếu PDF chứa đủ lịch sử lượt
+✓ Phiếu PDF chứa người học và không có dữ liệu kỹ thuật
+✓ HTML không trùng ID
+✓ Mọi ID JS đều có trong HTML
+✓ DEFAULT_CHARACTER_ID đúng
+✓ Slug query frontend được giới hạn
+✓ Frontend kiểm tra HTTP và dữ liệu hồ sơ
+✓ API_BASE_URL cùng domain
+✓ Endpoint /health
+✓ Endpoint /ask
+✓ Endpoint /whatif
+✓ Endpoint /roleplay
+✓ Endpoint /speak
+✓ Endpoint /analytics-event
+✓ Không còn endpoint lưu báo cáo ngoài
+✓ Tên người tham gia bắt buộc
+✓ Lớp và trường tùy chọn
+✓ Thông tin người tham gia sẵn sàng cho analytics
+✓ Không lưu dai dẳng thông tin cá nhân trên kiosk
+✓ Không còn vòng tròn trang trí tool-card
+✓ Không còn Google Sheets runtime
+✓ Analytics key chỉ ở backend
+✓ Analytics URL chỉ ở backend/env
+✓ Frontend gửi analytics qua backend cùng domain
+✓ Analytics có participant bắt buộc
+✓ Analytics ghi Tra cứu/Giả định/Nhập vai
+✓ Analytics đủ event bắt buộc
+✓ Không hiển thị nhãn kỹ thuật lịch sử
+✓ Bảo vệ chuỗi AI ở backend
+✓ Backend khóa và tự sửa lỗi đảo vai
+✓ Backend có chốt thoại an toàn sau retry
+✓ Chỉ số mỗi lượt chỉ đổi tối đa một mức
+✓ Lựa chọn nhập vai được loại trùng
+✓ Nút nhập vai có trạng thái tình huống mới
+✓ Tình huống mới reset lịch sử và lượt
+✓ Chỉ số mô phỏng dùng nhãn định tính
+✓ Nút đóng không còn vòng tròn
+✓ OpenAI key chỉ ở backend
+✓ Câu mới hủy request cũ
+✓ Câu mới xóa kết quả cũ
+✓ Tra cứu chỉ đọc reply
+✓ Tốc độ audio AI 1.12
+✓ Không fallback giọng Anh cho VI
+✓ Giả định đọc nhãn: Mốc có thật
+✓ Giả định đọc nhãn: Điều kiện thay đổi
+✓ Giả định đọc nhãn: Hệ quả có thể
+✓ Giả định đọc nhãn: Điểm bất định
+✓ Responsive mobile còn nguyên
+✓ PDF filename theo slug
+✓ PDF dùng phiếu độc lập, không chụp panel ngoài màn hình
+✓ CSS PDF có chống ngắt khối và nền trắng
+✓ Không còn dấu vết nhân vật mẫu
+✓ .env.example không chứa khóa thật
