@@ -1,0 +1,32 @@
+PHÙNG HƯNG — VALIDATION REPORT (template-parity repair)
+========================================================
+Character: Phùng Hưng
+Slug: phung-hung
+Source template used for this repair: TRUNG_TRAC_FULL_MOBILE_SCROLL_FIXED.zip
+
+REPAIR SCOPE
+- Rebuilt the shared frontend from the newly supplied Trưng Trắc template instead of patching the older Phùng Hưng build.
+- public/styles.css is copied byte-for-byte from the new template, including the mobile intro scroll fix.
+- public/app.js is copied from the new template; only character fallback identifiers/names were changed to phung-hung / Phùng Hưng.
+- public/index.html keeps the template structure; only character-dependent fallback text/metadata was changed.
+- Restored runtime rendering for Cách khám phá, Nguồn sử liệu, QA suggestions and What-if suggestions from the normal template render flow.
+- Character sources remain data-driven from public/data/phung-hung.json; no source list is hard-coded into HTML.
+
+AUTOMATED CHECKS EXECUTED
+- node --check public/app.js : PASS
+- node --check server.js     : PASS
+- npm run validate           : PASS (94 checks)
+
+BROWSER UI SMOKE TEST EXECUTED WITH CHROMIUM
+Viewports checked: 1920x1080, 1366x768, 390x844.
+The test loaded the real HTML/CSS/app.js with the profile JSON supplied through a local fetch mock so no external service/API key was required.
+Results at all three sizes:
+- Cách khám phá: 5 rendered items.
+- Nguồn sử liệu: 6 rendered source cards.
+- Tra cứu gợi ý: 5 rendered suggestion buttons.
+- English switch: guide/source contents remained rendered and source heading changed to "Historical sources".
+- Browser page errors: none in this smoke test.
+
+LIMITS OF THIS REPAIR TEST
+- The Chromium smoke test did not validate the external model-viewer CDN, OpenAI endpoints, analytics Manager ingestion, or real narration playback.
+- No new claim is made here that a real PDF was exported in this repair pass.
