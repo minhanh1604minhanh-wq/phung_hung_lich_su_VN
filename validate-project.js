@@ -45,8 +45,11 @@ check('Timeline song ngữ',(profile.timeline||[]).every(x=>x.vi&&x.en));
 check('Facts song ngữ',(profile.facts||[]).every(x=>x.vi&&x.en));
 check('Gợi ý VI/EN',profile.qaSuggestions?.vi?.length&&profile.qaSuggestions?.en?.length&&profile.whatifSuggestions?.vi?.length&&profile.whatifSuggestions?.en?.length);
 check('Nguồn sử liệu có dữ liệu để render',(profile.sources||[]).length>=6);
-const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn','opac.nlv.gov.vn']);
-check('URL nguồn chỉ thuộc whitelist',(profile.sources||[]).every(s=>{if(!s.url)return true;try{return allowedHosts.has(new URL(s.url).hostname)}catch{return false}}));
+const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn','app.vass.gov.vn','viensuhoc.vass.gov.vn','vienvanhoc.vass.gov.vn']);
+check('Mọi nguồn đều có URL tuyệt đối',(profile.sources||[]).every(s=>typeof s.url==='string'&&/^https?:\/\//i.test(s.url.trim())));
+check('URL nguồn chỉ thuộc whitelist',(profile.sources||[]).every(s=>{try{return allowedHosts.has(new URL(s.url).hostname)}catch{return false}}));
+check('Không dùng OPAC lỗi cho nguồn 1-2',!(profile.sources||[]).some(s=>/opac\.nlv\.gov\.vn/i.test(s.url||'')));
+check('Nguồn 3 trỏ website chính thống VASS',(()=>{const s=(profile.sources||[]).find(x=>x.id==='S3');if(!s)return false;try{return /(^|\.)vass\.gov\.vn$/i.test(new URL(s.url).hostname)}catch{return false}})());
 const assetPaths=[profile.model,profile.narration?.vi,profile.narration?.en].filter(Boolean).map(p=>'public/'+p.replace(/^\.\//,''));
 for(const p of assetPaths)check(`Asset tồn tại: ${p}`,exists(p));
 if(exists(assetPaths[0])){
@@ -87,6 +90,7 @@ check('Panel Nguồn sử liệu còn container',html.includes('id="sourcesList"
 check('Panel Cách khám phá còn container',html.includes('id="guideList"'));
 check('renderAll gọi Nguồn + Hướng dẫn',js.includes('renderSources();renderSuggestions();renderJourney();renderGuide();'));
 check('Nguồn sử liệu render từ JSON',js.includes("$('sourcesList').innerHTML=profile.sources.map"));
+check('Link nguồn rỗng không tự quay về website',js.includes("/^https?:\\/\\//i.test(url)"));
 check('Cách khám phá render đủ danh sách',js.includes("$('guideList').innerHTML=items.map"));
 check('DEFAULT_CHARACTER_ID đúng',/DEFAULT_CHARACTER_ID\s*:\s*["']phung-hung["']/.test(config));
 check('Slug query frontend được giới hạn',js.includes("/^[a-z0-9-]+$/i.test(requested)"));
