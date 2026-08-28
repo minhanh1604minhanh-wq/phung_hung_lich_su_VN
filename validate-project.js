@@ -36,13 +36,15 @@ check('Baseline chỉ số mô phỏng đúng',JSON.stringify(profile.roleplay?.
 const historicalCollections=[...(profile.profileSections||[]),...(profile.timeline||[]),...(profile.facts||[])];
 check('Mọi mục lịch sử có sourceIds',historicalCollections.every(x=>Array.isArray(x.sourceIds)&&x.sourceIds.length>0));
 check('Mọi sourceId đều tồn tại',historicalCollections.every(x=>x.sourceIds.every(id=>sourceIds.has(id))));
+check('Runtime sources tương thích template',historicalCollections.every(x=>Array.isArray(x.sources)&&JSON.stringify(x.sources)===JSON.stringify(x.sourceIds)));
+check('Nguồn có nhãn VI/EN đầy đủ',(profile.sources||[]).every(s=>s.title&&s.titleEn&&s.org&&s.orgEn&&s.type&&s.typeEn));
 check('Metadata lịch sử có sourceIds',['name','period','years','reign','dynasty','capital'].every(k=>profile.metadataEvidence?.[k]?.sourceIds?.length));
 check('Intro và màn bụi có nguồn',profile.intro?.sourceIds?.length&&profile.dustSecret?.sourceIds?.length);
 check('Hồ sơ song ngữ',(profile.profileSections||[]).every(x=>x.title&&x.titleEn&&x.body&&x.bodyEn));
 check('Timeline song ngữ',(profile.timeline||[]).every(x=>x.vi&&x.en));
 check('Facts song ngữ',(profile.facts||[]).every(x=>x.vi&&x.en));
 check('Gợi ý VI/EN',profile.qaSuggestions?.vi?.length&&profile.qaSuggestions?.en?.length&&profile.whatifSuggestions?.vi?.length&&profile.whatifSuggestions?.en?.length);
-const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn','vi.wikisource.org']);
+const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn','opac.nlv.gov.vn']);
 check('URL nguồn chỉ thuộc whitelist',(profile.sources||[]).every(s=>{if(!s.url)return true;try{return allowedHosts.has(new URL(s.url).hostname)}catch{return false}}));
 const assetPaths=[profile.model,profile.narration?.vi,profile.narration?.en].filter(Boolean).map(p=>'public/'+p.replace(/^\.\//,''));
 for(const p of assetPaths)check(`Asset tồn tại: ${p}`,exists(p));
