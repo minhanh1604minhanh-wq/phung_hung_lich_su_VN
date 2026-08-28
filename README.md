@@ -1,16 +1,16 @@
-# WEBSITE LỊCH SỬ TƯƠNG TÁC — TRƯNG TRẮC
+# WEBSITE LỊCH SỬ TƯƠNG TÁC — PHÙNG HƯNG
 
 Bản FULL gồm frontend, backend Express, dữ liệu song ngữ, mô hình 3D, audio thuyết minh VI/EN, OpenAI TTS, PDF và cấu hình Vercel. Website không gửi hoặc lưu dữ liệu hoạt động ra dịch vụ bảng tính bên ngoài.
 
 ## File chính
 
-- `server.js` — các endpoint `/health`, `/ask`, `/whatif`, `/roleplay`, `/speak`.
+- `server.js` — các endpoint `/health`, `/ask`, `/whatif`, `/roleplay`, `/speak`, `/analytics-event`.
 - `public/index.html`, `public/styles.css`, `public/app.js` — giao diện và hành vi tương tác.
 - `public/vendor/html2pdf.bundle.min.js` — thư viện PDF đóng gói cục bộ, không phụ thuộc CDN lúc chạy.
 - `public/data/phung-hung.json` — hồ sơ song ngữ, timeline, facts có `sourceId`, nguồn, gợi ý và kịch bản nhập vai.
 - `public/assets/phung-hung.glb` — mô hình 3D.
 - `public/assets/phung-hung-vi.mp3`, `public/assets/phung-hung-en.mp3` — audio thuyết minh.
-- `.env.example` — tên biến môi trường OpenAI, không chứa khóa thật.
+- `.env.example` — các biến môi trường OpenAI + Analytics Manager, không chứa khóa thật.
 - `vercel.json` — cấu hình deploy cùng domain.
 
 ## Kiểm tra project
@@ -62,7 +62,7 @@ Mở `http://localhost:3000`; kiểm tra `http://localhost:3000/health`.
 
 ## Nguyên tắc nội dung
 
-AI chỉ nhận bộ facts trong `phung-hung.json`. Khi dữ liệu không đủ, câu trả lời tiếng Việt phải ghi “Chưa đủ nguồn để khẳng định.” Các điểm về tên chồng, niên đại cuối đời và cách kể cái chết được đánh dấu là tranh luận/truyền thống thay vì khẳng định tuyệt đối.
+AI chỉ nhận bộ facts trong `phung-hung.json`. Khi dữ liệu không đủ, câu trả lời tiếng Việt phải ghi “Chưa đủ nguồn để khẳng định.” Các điểm về niên đại khởi nghĩa, thời gian kiểm soát phủ trị và những chi tiết truyền tụng quanh Phùng Hưng được ghi rõ mức độ chứng cứ hoặc điểm còn tranh luận, không khẳng định quá mức nguồn cho phép.
 
 
 ## Analytics trung tâm (v5.8.5)
