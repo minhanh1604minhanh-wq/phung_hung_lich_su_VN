@@ -1,0 +1,42 @@
+PHÙNG HƯNG — COMPLETION REPORT
+
+Character: Phùng Hưng
+Slug: phung-hung
+Analytics Manager: https://quan-ly-sigma.vercel.app
+Analytics endpoint: POST ${ANALYTICS_API_URL}/api/events via website backend POST /analytics-event
+Health: GET /health
+
+Main files changed:
+- public/data/phung-hung.json
+- public/assets/phung-hung.glb
+- public/assets/phung-hung-vi.mp3
+- public/assets/phung-hung-en.mp3
+- public/index.html
+- public/app.js
+- public/config.js
+- server.js
+- validate-project.js
+- package.json
+- .env.example
+- README.md
+
+Automated checks actually run:
+- node --check public/app.js: PASS
+- node --check server.js: PASS
+- npm run validate: PASS (85 checks)
+- GLB magic/version/declared length: PASS
+- MP3 header and VI/EN mapping: PASS
+- Runtime hard-code scan: PASS
+
+Not fully verified in this environment:
+- npm install did not finish before execution timeout.
+- Chromium visual/browser and real html2pdf export test did not finish because the headless browser stalled.
+- Live OpenAI and Analytics Manager requests require real environment secrets and were not sent.
+
+Vercel environment variables:
+OPENAI_API_KEY=
+OPENAI_TEXT_MODEL=gpt-5-mini
+OPENAI_TTS_MODEL=
+ANALYTICS_API_URL=https://quan-ly-sigma.vercel.app
+ANALYTICS_INGEST_KEY=
+PORT=3000
