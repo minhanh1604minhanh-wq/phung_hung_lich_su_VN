@@ -70,7 +70,7 @@ function booleanValue(value){return value===true||String(value).toLowerCase()===
 async function jsonChat(messages,temp=.35){
   if(!openai)throw new Error('OPENAI_API_KEY missing');
   const r=await openai.chat.completions.create({
-    model:process.env.OPENAI_TEXT_MODEL||'gpt-5-mini',
+    model:process.env.OPENAI_TEXT_MODEL||'gpt-4o-mini',
     messages,
     temperature:temp,
     response_format:{type:'json_object'}
@@ -230,7 +230,7 @@ app.post('/speak',async(req,res)=>{
   if(!openai)return res.status(503).end();
   try{
     const a=await openai.audio.speech.create({
-      model:process.env.OPENAI_TTS_MODEL||'gpt-5-mini-tts',
+      model:process.env.OPENAI_TTS_MODEL||'gpt-4o-mini-tts',
       voice:lang==='vi'?'cedar':'marin',
       input:text,
       instructions:lang==='vi'?'Đọc tiếng Việt rõ ràng, nhịp vừa, giọng thuyết minh lịch sử trang trọng nhưng gần gũi.':'Read clearly at a moderate pace in a calm museum-guide tone.',

@@ -1,4 +1,4 @@
-# CHÍNH SÁCH NGUỒN — TRƯNG TRẮC
+# CHÍNH SÁCH NGUỒN — PHÙNG HƯNG
 
 Chỉ dùng: Đại Việt sử ký toàn thư; Việt Nam sử lược; Lịch sử Việt Nam (15 tập); Nghiên Cứu Lịch Sử; Thư viện Quốc gia Việt Nam; Người Kể Sử.
 

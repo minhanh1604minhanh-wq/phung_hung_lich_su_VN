@@ -1,0 +1,24 @@
+PHÙNG HƯNG — VALIDATION REPORT v5.8.5
+Ngày kiểm định: 2026-08-24
+
+KẾT QUẢ: PASS (85/85 phép kiểm tra tự động)
+
+Các nhóm đã xác minh:
+- Cú pháp JavaScript frontend/backend và JSON dữ liệu hợp lệ.
+- Hồ sơ, timeline, nguồn, GLB và MP3 đầy đủ; mọi sourceId đều tồn tại.
+- Vai người học là Phùng Hưng; AI là cố vấn, không chiếm vai người học.
+- Backend có khóa vai, một lần tự sửa và thoại dự phòng an toàn.
+- Chỉ số mô phỏng chỉ thay đổi tối đa một mức mỗi lượt; lựa chọn được loại trùng.
+- Phiếu học tập lấy đủ lịch sử nhập vai, thông tin người học và không lộ dữ liệu kỹ thuật.
+- html2pdf được đóng gói cục bộ; không phụ thuộc CDN khi xuất file.
+- PDF dùng phiếu độc lập có nền trắng và chống ngắt khối, không chụp panel ngoài màn hình.
+- Tốc độ đọc câu trả lời là 1.12; câu mới hủy request và âm thanh cũ.
+- API cùng domain, khóa OpenAI/analytics chỉ ở backend, không có khóa thật trong .env.example.
+- Giao diện desktop đã được kiểm tra trực quan trong trình duyệt.
+
+KIỂM TRA PDF THỰC TẾ
+- Đã tạo PDF A4 từ lịch sử mẫu 6 lượt bằng chính thư viện cục bộ của dự án.
+- Kết quả: 3 trang, không trắng, không cắt mép, không chồng chữ, tiếng Việt hiển thị đúng.
+
+LỆNH CHẠY LẠI
+node validate-project.js
