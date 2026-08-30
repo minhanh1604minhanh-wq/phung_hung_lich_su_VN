@@ -22,9 +22,9 @@ Frontend:
 - public/vendor/html2pdf.bundle.min.js.LICENSE.txt
 
 Assets:
-- public/assets/phung-hung.glb
-- public/assets/phung-hung-vi.mp3
-- public/assets/phung-hung-en.mp3
+- public/assets/phung_hung.glb
+- public/assets/phung_hung_tieng_viet.mp3
+- public/assets/phung_hung_tieng_anh.mp3
 
 Participant fields:
 - name: required

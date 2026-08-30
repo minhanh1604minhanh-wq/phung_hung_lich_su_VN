@@ -42,7 +42,7 @@ check('Hồ sơ song ngữ',(profile.profileSections||[]).every(x=>x.title&&x.ti
 check('Timeline song ngữ',(profile.timeline||[]).every(x=>x.vi&&x.en));
 check('Facts song ngữ',(profile.facts||[]).every(x=>x.vi&&x.en));
 check('Gợi ý VI/EN',profile.qaSuggestions?.vi?.length&&profile.qaSuggestions?.en?.length&&profile.whatifSuggestions?.vi?.length&&profile.whatifSuggestions?.en?.length);
-const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn']);
+const allowedHosts=new Set(['nguoikesu.com','www.nguoikesu.com','nghiencuulichsu.com','www.nghiencuulichsu.com','nlv.gov.vn','www.nlv.gov.vn','vi.wikisource.org']);
 check('URL nguồn chỉ thuộc whitelist',(profile.sources||[]).every(s=>{try{return allowedHosts.has(new URL(s.url).hostname)}catch{return false}}));
 const assetPaths=[profile.model,profile.narration?.vi,profile.narration?.en].filter(Boolean).map(p=>'public/'+p.replace(/^\.\//,''));
 for(const p of assetPaths)check(`Asset tồn tại: ${p}`,exists(p));
@@ -124,9 +124,9 @@ check('CSS PDF có chống ngắt khối và nền trắng',css.includes('.pdf-e
 const sourceFiles=[];
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(e.name==='node_modules'||e.name==='.git')continue;const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else sourceFiles.push(p)}}
 walk(root);
-const banned=['Trưng Trắc','Trung Trac','trung-trac','trung_trac'];
+const banned=[['Lê','Hoàn'].join(' '),['le','hoan'].join('-'),['Le','Hoan.glb'].join('_'),['le','hoan'].join('_')];
 const hits=[];
-for(const file of sourceFiles){if(file===path.join(root,'validate-project.js')||file.endsWith('.glb')||file.endsWith('.mp3')||file.endsWith('.zip'))continue;let s='';try{s=fs.readFileSync(file,'utf8')}catch{continue}for(const term of banned)if(s.includes(term))hits.push(`${path.relative(root,file)} => ${term}`)}
+for(const file of sourceFiles){if(file.endsWith('.glb')||file.endsWith('.mp3')||file.endsWith('.zip'))continue;let s='';try{s=fs.readFileSync(file,'utf8')}catch{continue}for(const term of banned)if(s.includes(term))hits.push(`${path.relative(root,file)} => ${term}`)}
 check('Không còn dấu vết nhân vật mẫu',hits.length===0,hits.join('; '));
 const env=read('.env.example');
 check('.env.example không chứa khóa thật',!/(sk-[A-Za-z0-9_-]{20,}|^OPENAI_API_KEY[ \t]*=[ \t]*\S+)/m.test(env));

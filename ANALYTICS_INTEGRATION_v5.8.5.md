@@ -5,7 +5,7 @@ Website Phùng Hưng gửi dữ liệu hoạt động tới website quản lý t
 Vercel Environment Variables:
 
 ```env
-ANALYTICS_API_URL=https://quan-ly-sigma.vercel.app
+ANALYTICS_API_URL=https://quan-ly-s7j8.vercel.app
 ANALYTICS_INGEST_KEY=<cùng key với website quản lý>
 ```
 
