@@ -1,0 +1,732 @@
+{
+  "id": "phung-hung",
+  "name": "Phùng Hưng",
+  "nameEn": "Phung Hung",
+  "period": "An Nam đô hộ phủ • thế kỷ VIII • thời thuộc Đường",
+  "periodEn": "Annan Protectorate • 8th century • Tang rule",
+  "years": "Không rõ – khoảng 791",
+  "yearsEn": "Unknown – around 791",
+  "reign": "Chiếm giữ phủ thành trong thời gian ngắn; niên đại và thời lượng còn khác nhau giữa nguồn",
+  "reignEn": "Held the protectorate seat briefly; chronology and duration vary among sources",
+  "dynasty": "Chính quyền Phùng Hưng tại phủ thành Tống Bình",
+  "dynastyEn": "Phung Hung’s administration at Tong Binh",
+  "capital": "Phủ thành Tống Bình (sau khi chiếm được)",
+  "capitalEn": "The fortified seat of Tong Binh (after its capture)",
+  "metadataEvidence": {
+    "name": {
+      "sourceIds": [
+        "S1",
+        "S4"
+      ],
+      "evidenceType": "historical_name"
+    },
+    "period": {
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidenceType": "historical_context"
+    },
+    "years": {
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "evidenceType": "uncertain_chronology"
+    },
+    "reign": {
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidenceType": "chronology_with_variants"
+    },
+    "dynasty": {
+      "sourceIds": [
+        "S1",
+        "S2"
+      ],
+      "evidenceType": "historical_context"
+    },
+    "capital": {
+      "sourceIds": [
+        "S1",
+        "S2"
+      ],
+      "evidenceType": "chronicle_record"
+    },
+    "model": {
+      "sourceIds": [],
+      "evidenceType": "user_supplied_asset"
+    },
+    "narration": {
+      "sourceIds": [],
+      "evidenceType": "user_supplied_asset"
+    }
+  },
+  "model": "./assets/phung_hung.glb",
+  "narration": {
+    "vi": "./assets/phung_hung_tieng_viet.mp3",
+    "en": "./assets/phung_hung_tieng_anh.mp3"
+  },
+  "intro": {
+    "vi": "Khám phá Phùng Hưng qua mô hình 3D, hồ sơ phân loại chứng cứ, tra cứu sử liệu, giả định lịch sử và nhập vai quyết sách.",
+    "en": "Explore Phung Hung through a 3D model, an evidence-labelled profile, historical inquiry, counterfactual analysis and decision role-play.",
+    "sourceIds": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "evidenceType": "editorial_summary"
+  },
+  "dustSecret": {
+    "vi": "Cuối thế kỷ VIII, Phùng Hưng dựa vào lực lượng địa phương ở Đường Lâm, chống lại chính quyền đô hộ nhà Đường và chiếm phủ thành. Tuy nhiên, niên đại khởi nghĩa, thời gian ông làm chủ phủ thành và năm mất vẫn được các nguồn ghi khác nhau.",
+    "en": "In the late eighth century, Phung Hung drew on local forces from Duong Lam, challenged Tang colonial rule and captured the protectorate seat. The date of the uprising, the length of his control and the year of his death remain inconsistent across sources.",
+    "sourceIds": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "evidenceType": "historical_fact_and_dispute"
+  },
+  "qaPlaceholder": {
+    "vi": "Ví dụ: Vì sao niên đại khởi nghĩa Phùng Hưng còn khác nhau?",
+    "en": "Example: Why do dates for Phung Hung’s uprising differ?"
+  },
+  "whatifPlaceholder": {
+    "vi": "Ví dụ: Nếu chính quyền Phùng Hưng củng cố được liên minh địa phương thì sao?",
+    "en": "Example: What if Phung Hung had consolidated local alliances?"
+  },
+  "profileSections": [
+    {
+      "title": "Xuất thân và quê quán",
+      "titleEn": "Origins and homeland",
+      "body": "Đại Việt sử ký toàn thư và các bản tổng hợp dựa trên sử cũ ghi Phùng Hưng là người Đường Lâm, thuộc Phong Châu, xuất thân trong một gia đình hào phú. Vị trí chính xác của Đường Lâm cổ hiện còn là vấn đề nghiên cứu; không nên đồng nhất tuyệt đối với một địa điểm hiện đại nếu nguồn chưa đủ.",
+      "bodyEn": "The Complete Annals and later compilations based on older records identify Phung Hung as a native of Duong Lam in Phong Chau and a member of a wealthy local family. The exact location of ancient Duong Lam remains debated and should not be equated uncritically with a single modern site.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "evidenceType": "historical_fact_and_dispute",
+      "sourceIds": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "title": "Sức mạnh phi thường: ghi chép và sắc thái truyền kỳ",
+      "titleEn": "Extraordinary strength: record and legendary colouring",
+      "body": "Sử liệu Việt Nam thường chép Phùng Hưng có sức khỏe hơn người, có thể vật trâu và đánh hổ. Đây là mô-típ được sử cũ và nguồn kể sử lặp lại, nhưng không thể kiểm chứng theo nghĩa đo lường hiện đại; website xếp vào ghi chép truyền thống có sắc thái truyền kỳ.",
+      "bodyEn": "Vietnamese historical narratives commonly describe Phung Hung as exceptionally strong, able to wrestle buffaloes and fight tigers. The motif recurs in chronicles and popular retellings but cannot be verified as a modern measurable fact, so it is labelled a traditional account with legendary colouring.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "evidenceType": "traditional_account",
+      "sourceIds": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "title": "Bối cảnh thuộc Đường và chính sách thuế khóa",
+      "titleEn": "Tang rule and taxation",
+      "body": "Các nguồn đặt cuộc nổi dậy trong bối cảnh An Nam do nhà Đường cai trị. Việt Nam sử lược và các bản chép sử nhấn mạnh việc quan đô hộ Cao Chính Bình thu thuế nặng, làm dân chúng oán giận. Đây là nguyên nhân trực tiếp được sử liệu nêu; những phân tích rộng hơn về cấu trúc xã hội là nhận định nghiên cứu.",
+      "bodyEn": "The sources place the uprising under Tang administration in Annan. Viet Nam Su Luoc and chronicle-based accounts stress that Protector-General Gao Zhengping imposed heavy taxes, provoking resentment. This is the direct cause stated in the sources; broader social explanations are scholarly interpretation.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidenceType": "historical_fact_and_interpretation",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "title": "Khởi binh cùng Phùng Hải",
+      "titleEn": "Rising with Phung Hai",
+      "body": "Nghiên cứu dựa trên sử cũ ghi Phùng Hưng cùng em là Phùng Hải chiêu tập lực lượng, uy phục các ấp lân cận; Phùng Hưng xưng Đô Quân, Phùng Hải xưng Đô Bảo. Mốc khởi đầu thường được đặt trong khoảng niên hiệu Đại Lịch của nhà Đường, nhưng năm cụ thể chưa thống nhất.",
+      "bodyEn": "Research based on older chronicles states that Phung Hung and his younger brother Phung Hai gathered forces and brought neighbouring settlements under their influence; Phung Hung took the title Do Quan and Phung Hai Do Bao. The beginning is often placed in the Tang Dali era, but an exact year is not agreed.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidenceType": "chronicle_record_and_uncertainty",
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "title": "Kế của Đỗ Anh Hàn và cuộc vây phủ thành",
+      "titleEn": "Do Anh Han’s plan and the siege",
+      "body": "Các bản sử ghi Phùng Hưng gặp khó khi đánh Cao Chính Bình, sau đó dùng kế của Đỗ Anh Hàn để tiến quân vây phủ. Cao Chính Bình lo sợ, lâm bệnh rồi chết; Phùng Hưng vào chiếm giữ phủ thành. Chi tiết diễn biến cụ thể ngoài các nét chính này chưa đủ nguồn để khẳng định.",
+      "bodyEn": "The records say Phung Hung initially struggled against Gao Zhengping, then followed a plan proposed by Do Anh Han to besiege the protectorate seat. Gao became fearful, fell ill and died; Phung Hung entered and occupied the stronghold. More detailed battlefield reconstruction is not sufficiently supported.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "evidenceType": "chronicle_record",
+      "sourceIds": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "title": "Thời gian làm chủ phủ thành: điểm còn tranh luận",
+      "titleEn": "Duration of rule: a disputed point",
+      "body": "Việt Nam sử lược chép Phùng Hưng giữ phủ thành được vài tháng rồi mất. Một số truyền thuật khác gắn cho ông thời gian cầm quyền dài hơn. Vì bộ nguồn được phép chưa thống nhất, website không khẳng định con số năm trị vì duy nhất.",
+      "bodyEn": "Viet Nam Su Luoc says Phung Hung held the protectorate seat for only a few months before dying. Other traditions assign him a longer period of rule. Because the permitted sources do not agree, the site does not assert a single reign length.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "evidenceType": "disputed_chronology",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "title": "Phùng An nối nghiệp",
+      "titleEn": "Phung An’s succession",
+      "body": "Sau khi Phùng Hưng mất, quân sĩ tôn con ông là Phùng An lên nối nghiệp. Các nguồn cho biết chính quyền này cuối cùng không duy trì được trước sự khôi phục quyền kiểm soát của nhà Đường. Những chi tiết về cơ cấu hành chính và quân số chưa đủ nguồn để khẳng định.",
+      "bodyEn": "After Phung Hung’s death, his followers elevated his son Phung An as successor. The sources indicate that this administration ultimately failed to withstand the restoration of Tang control. Details of its bureaucracy and troop strength are not sufficiently documented.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "evidenceType": "historical_fact_and_limit",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "title": "Danh hiệu Bố Cái Đại Vương",
+      "titleEn": "The title Bo Cai Dai Vuong",
+      "body": "Việt Nam sử lược giải thích rằng dân chúng ái mộ Phùng Hưng, lập đền thờ và tôn ông là Bố Cái Đại Vương, với “bố” là cha và “cái” là mẹ, biểu thị sự tôn kính như cha mẹ. Đây là cách giải thích truyền thống được nguồn tổng hợp ghi lại.",
+      "bodyEn": "Viet Nam Su Luoc explains that the people honoured Phung Hung, built a shrine and acclaimed him as Bo Cai Dai Vuong, interpreting “bo” as father and “cai” as mother—an expression of reverence as for one’s parents. This is the traditional explanation preserved in a general historical work.",
+      "sources": [
+        "S2",
+        "S4"
+      ],
+      "evidenceType": "traditional_explanation",
+      "sourceIds": [
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": "Không rõ",
+      "vi": "Năm sinh của Phùng Hưng chưa được bộ nguồn cho phép xác nhận chắc chắn.",
+      "en": "Phung Hung’s birth year is not securely established by the permitted sources.",
+      "sources": [
+        "S1",
+        "S4"
+      ],
+      "evidenceType": "uncertain",
+      "sourceIds": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "year": "Khoảng 766–779",
+      "vi": "Một số sử liệu đặt thời điểm Phùng Hưng và Phùng Hải gây dựng lực lượng trong niên hiệu Đại Lịch của nhà Đường.",
+      "en": "Some chronicle-based accounts place Phung Hung and Phung Hai’s mobilisation during the Tang Dali era.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidenceType": "approximate_chronology",
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "year": "Trước 791",
+      "vi": "Lực lượng Phùng Hưng mở rộng ảnh hưởng ở các ấp lân cận; mốc cụ thể còn khác nhau giữa các cách chép.",
+      "en": "Phung Hung’s forces expanded their influence among neighbouring settlements; the precise date varies by account.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "evidenceType": "uncertain_chronology",
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "year": "791",
+      "vi": "Việt Nam sử lược ghi Cao Chính Bình thu thuế nặng; Phùng Hưng tiến đánh phủ Đô hộ.",
+      "en": "Viet Nam Su Luoc records heavy taxation under Gao Zhengping and Phung Hung’s attack on the protectorate seat.",
+      "sources": [
+        "S2"
+      ],
+      "evidenceType": "historical_fact_in_source",
+      "sourceIds": [
+        "S2"
+      ]
+    },
+    {
+      "year": "Khoảng 791",
+      "vi": "Theo sử cũ, Cao Chính Bình lo sợ, lâm bệnh rồi chết; Phùng Hưng chiếm phủ thành Tống Bình.",
+      "en": "According to older records, Gao Zhengping became fearful, fell ill and died; Phung Hung captured the fortified seat of Tong Binh.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidenceType": "chronicle_record",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "year": "Sau khi chiếm thành",
+      "vi": "Phùng Hưng tổ chức cai quản trong một thời gian; độ dài chính xác chưa thống nhất.",
+      "en": "Phung Hung administered the captured seat for a period whose exact duration is disputed.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "evidenceType": "disputed",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "year": "Khoảng 791",
+      "vi": "Phùng Hưng mất; một số nguồn phổ thông ghi năm khác. Chưa đủ nguồn để khẳng định một niên đại tuyệt đối.",
+      "en": "Phung Hung died around this time, though popular sources give other years. The evidence is insufficient to confirm one absolute date.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "evidenceType": "uncertain_and_disputed",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "year": "Sau đó",
+      "vi": "Phùng An được quân sĩ lập lên nối nghiệp; về sau quyền kiểm soát của nhà Đường được khôi phục.",
+      "en": "Phung An was elevated by the troops as successor; Tang control was later restored.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "evidenceType": "historical_fact",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "kind": "historical_fact",
+      "vi": "Phùng Hưng được các nguồn Việt Nam ghi là người Đường Lâm thuộc Phong Châu.",
+      "en": "Vietnamese sources identify Phung Hung as a native of Duong Lam in Phong Chau.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "id": "F2",
+      "kind": "uncertain",
+      "vi": "Năm sinh của Phùng Hưng chưa được bộ nguồn được phép xác nhận.",
+      "en": "Phung Hung’s birth year is not established by the permitted source set.",
+      "sources": [
+        "S1",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "id": "F3",
+      "kind": "traditional_account",
+      "vi": "Sử cũ kể Phùng Hưng có sức vật trâu, đánh hổ; đây là ghi chép truyền thống có sắc thái truyền kỳ.",
+      "en": "Older records say Phung Hung could wrestle buffaloes and fight tigers; this is a traditional account with legendary colouring.",
+      "sources": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "id": "F4",
+      "kind": "historical_fact",
+      "vi": "Phùng Hải được ghi là em của Phùng Hưng và cùng tham gia gây dựng lực lượng.",
+      "en": "Phung Hai is recorded as Phung Hung’s younger brother and a partner in building the movement.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "F5",
+      "kind": "chronicle_record",
+      "vi": "Phùng Hưng xưng Đô Quân, còn Phùng Hải xưng Đô Bảo.",
+      "en": "Phung Hung took the title Do Quan, while Phung Hai took the title Do Bao.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "F6",
+      "kind": "historical_context",
+      "vi": "Cuộc nổi dậy diễn ra trong thời kỳ An Nam nằm dưới quyền cai trị của nhà Đường.",
+      "en": "The uprising occurred while Annan was under Tang rule.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "F7",
+      "kind": "historical_fact",
+      "vi": "Các nguồn nhấn mạnh chính sách thuế nặng của Cao Chính Bình làm dân chúng oán giận.",
+      "en": "The sources stress that Gao Zhengping’s heavy taxation provoked popular resentment.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "F8",
+      "kind": "chronicle_record",
+      "vi": "Đỗ Anh Hàn được ghi là người hiến kế giúp Phùng Hưng vây phủ thành.",
+      "en": "Do Anh Han is recorded as the strategist who advised Phung Hung on besieging the protectorate seat.",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "id": "F9",
+      "kind": "chronicle_record",
+      "vi": "Cao Chính Bình lo sợ, lâm bệnh rồi chết trong lúc bị vây.",
+      "en": "Gao Zhengping became fearful, fell ill and died during the siege.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "F10",
+      "kind": "historical_fact",
+      "vi": "Phùng Hưng chiếm giữ phủ thành Tống Bình.",
+      "en": "Phung Hung captured and held the fortified seat of Tong Binh.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "F11",
+      "kind": "disputed",
+      "vi": "Thời gian Phùng Hưng làm chủ phủ thành được ghi khác nhau; Việt Nam sử lược nói vài tháng.",
+      "en": "The duration of Phung Hung’s control is disputed; Viet Nam Su Luoc says only a few months.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "id": "F12",
+      "kind": "historical_fact",
+      "vi": "Sau khi Phùng Hưng mất, quân sĩ lập Phùng An lên nối nghiệp.",
+      "en": "After Phung Hung’s death, the troops elevated Phung An as successor.",
+      "sources": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "F13",
+      "kind": "traditional_explanation",
+      "vi": "Danh hiệu Bố Cái Đại Vương được giải thích là sự tôn kính ông như cha mẹ của dân.",
+      "en": "The title Bo Cai Dai Vuong is traditionally explained as honouring him like a father and mother of the people.",
+      "sources": [
+        "S2",
+        "S4"
+      ],
+      "sourceIds": [
+        "S2",
+        "S4"
+      ]
+    },
+    {
+      "id": "F14",
+      "kind": "evidence_limit",
+      "vi": "Chưa đủ nguồn để khẳng định chính xác quân số, cơ cấu quan chức, lãnh thổ kiểm soát và thời lượng cai trị của chính quyền Phùng Hưng.",
+      "en": "The evidence is insufficient to confirm exact troop numbers, administrative structure, territorial reach or duration of Phung Hung’s rule.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Đại Việt sử ký toàn thư – phần chép về Phùng Hưng (được dẫn và đối chiếu trong Nghiên Cứu Lịch Sử)",
+      "titleEn": "Complete Annals of Dai Viet – account of Phung Hung (quoted and compared in Nghien Cuu Lich Su)",
+      "org": "Đại Việt sử ký toàn thư / Nghiên Cứu Lịch Sử",
+      "orgEn": "Complete Annals of Dai Viet / Nghien Cuu Lich Su",
+      "type": "Chính sử; dùng cho thân thế, khởi binh, vây phủ và kế tục",
+      "typeEn": "Official chronicle used for origins, mobilisation, siege and succession",
+      "url": "https://nghiencuulichsu.com/2015/12/14/vai-ghi-chu-ve-lich-su-viet-nam-thoi-thuoc-duong/"
+    },
+    {
+      "id": "S2",
+      "title": "Việt Nam sử lược – Quyển I, Phần II, Chương V: Bố Cái Đại Vương",
+      "titleEn": "Viet Nam Su Luoc – Book I, Part II, Chapter V: Bo Cai Dai Vuong",
+      "org": "Việt Nam sử lược – Trần Trọng Kim",
+      "orgEn": "Viet Nam Su Luoc – Tran Trong Kim",
+      "type": "Công trình lịch sử tổng hợp; dùng đối chiếu niên đại, diễn biến và danh hiệu",
+      "typeEn": "General history used to compare chronology, events and honorific title",
+      "url": "https://vi.wikisource.org/wiki/Vi%E1%BB%87t_Nam_s%E1%BB%AD_l%C6%B0%E1%BB%A3c/Quy%E1%BB%83n_I/Ph%E1%BA%A7n_II/Ch%C6%B0%C6%A1ng_V"
+    },
+    {
+      "id": "S3",
+      "title": "Vài ghi chú về lịch sử Việt Nam thời thuộc Đường; bài 2 – Đặng Thanh Bình",
+      "titleEn": "Notes on Vietnamese history under Tang rule; part 2 – Dang Thanh Binh",
+      "org": "Nghiên Cứu Lịch Sử",
+      "orgEn": "Nghien Cuu Lich Su",
+      "type": "Nghiên cứu/biên khảo đối chiếu sử liệu và niên đại",
+      "typeEn": "Research essay comparing records and chronology",
+      "url": "https://nghiencuulichsu.com/2016/05/27/vai-ghi-chu-ve-lich-su-viet-nam-thoi-thuoc-duong-bai-2/"
+    },
+    {
+      "id": "S4",
+      "title": "Phùng Hưng – hồ sơ tổng hợp và đối chiếu các cách ghi",
+      "titleEn": "Phung Hung – compiled profile comparing variant accounts",
+      "org": "Người Kể Sử",
+      "orgEn": "Nguoi Ke Su",
+      "type": "Nguồn kể sử phổ thông; chỉ dùng bổ trợ và nhận diện điểm khác nhau",
+      "typeEn": "Popular history source used only for support and identifying divergent accounts",
+      "url": "https://nguoikesu.com/nhan-vat/phung-hung"
+    }
+  ],
+  "qaSuggestions": {
+    "vi": [
+      "Phùng Hưng nổi dậy trong bối cảnh nào?",
+      "Đỗ Anh Hàn có vai trò gì trong cuộc vây phủ?",
+      "Vì sao thời gian Phùng Hưng cai quản còn tranh luận?",
+      "Danh hiệu Bố Cái Đại Vương được giải thích ra sao?"
+    ],
+    "en": [
+      "In what context did Phung Hung rise against Tang rule?",
+      "What role did Do Anh Han play in the siege?",
+      "Why is the duration of Phung Hung’s rule disputed?",
+      "How is the title Bo Cai Dai Vuong traditionally explained?"
+    ]
+  },
+  "whatifSuggestions": {
+    "vi": [
+      "Nếu Phùng Hưng củng cố được liên minh các ấp quanh Đường Lâm thì sao?",
+      "Nếu phủ thành Tống Bình được tổ chức hậu cần tốt hơn sau khi chiếm thì sao?",
+      "Nếu Phùng An duy trì được sự đoàn kết của lực lượng kế tục thì sao?"
+    ],
+    "en": [
+      "What if Phung Hung had consolidated alliances around Duong Lam?",
+      "What if Tong Binh had received stronger logistical organisation after its capture?",
+      "What if Phung An had maintained unity among the successor forces?"
+    ]
+  },
+  "roleplay": {
+    "maxTurns": 6,
+    "learnerRole": {
+      "vi": "Bạn nhập vai Phùng Hưng.",
+      "en": "You play Phung Hung."
+    },
+    "npcRole": {
+      "vi": "AI nhập vai một cố vấn của lực lượng nổi dậy, trình bày phương án với Phùng Hưng.",
+      "en": "The AI plays an adviser to the uprising, presenting options to Phung Hung."
+    },
+    "addressRule": {
+      "vi": "Nói ở ngôi thứ nhất với tư cách người cố vấn; gọi người học là “Phùng Hưng” hoặc “chủ tướng”. Không bao giờ tự nhận mình là Phùng Hưng và không viết thay lời của người học.",
+      "en": "Speak in the first person as the adviser; address the learner as 'Phung Hung' or 'commander'. Never claim to be Phung Hung and never write the learner’s lines."
+    },
+    "identityGuard": {
+      "fallbackNpcDialogue": {
+        "vi": "Phùng Hưng, xin cân nhắc ba phương án dưới đây; mọi hệ quả tiếp theo đều là mô phỏng giáo dục.",
+        "en": "Phung Hung, consider the three options below; every consequence that follows is an educational simulation."
+      },
+      "forbiddenNpcPhrases": {
+        "vi": [
+          "Tôi là Phùng Hưng",
+          "Ta là Phùng Hưng"
+        ],
+        "en": [
+          "I am Phung Hung"
+        ]
+      }
+    },
+    "setting": {
+      "vi": "Cuối thế kỷ VIII, lực lượng của Phùng Hưng đã gây dựng được ảnh hưởng tại Đường Lâm và các ấp lân cận. Cao Chính Bình tăng sưu thuế; một cuộc tiến công vào phủ thành đang được cân nhắc. Diễn biến sau mỗi lựa chọn là mô phỏng giáo dục.",
+      "en": "In the late eighth century, Phung Hung’s forces have built influence in Duong Lam and neighbouring settlements. Gao Zhengping has intensified taxation, and an assault on the protectorate seat is being considered. Events after each choice are educational simulation.",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "evidenceType": "historical_background"
+    },
+    "opening": {
+      "vi": "Phùng Hưng phải quyết định cách mở rộng lực lượng, bảo đảm hậu cần và tạo đồng thuận trước khi tiến đánh phủ thành Tống Bình.",
+      "en": "Phung Hung must decide how to expand his forces, secure logistics and build consensus before moving against the fortified seat of Tong Binh.",
+      "sourceIds": [],
+      "evidenceType": "simulation_based_on_historical_background",
+      "contextSourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    "evaluationFactors": {
+      "vi": [
+        "quân sự",
+        "ngoại giao/liên minh",
+        "lòng dân",
+        "hậu cần",
+        "chính trị/chính danh",
+        "quản trị"
+      ],
+      "en": [
+        "military position",
+        "diplomacy and alliances",
+        "public support",
+        "logistics",
+        "politics and legitimacy",
+        "governance"
+      ]
+    },
+    "initialEvaluation": {
+      "military": 3,
+      "diplomacy": 2,
+      "publicSupport": 4,
+      "logistics": 2,
+      "politics": 3,
+      "governance": 2
+    },
+    "rules": {
+      "vi": "Mỗi lượt chưa kết thúc phải có đúng 3 lựa chọn. Nguồn chỉ gắn cho bối cảnh có thật; mọi hệ quả do lựa chọn tạo ra phải ghi rõ là mô phỏng.",
+      "en": "Each unfinished turn must offer exactly three choices. Sources may support only real background; all consequences created by choices must be labelled as simulation."
+    }
+  }
+}
